@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Username </title>
+	<link type="text/css" rel="stylesheet" href="profile.css"/>
+</head>
+<body>
+
+	<div id="header">
+		<span id="header1"> <h1>Username</h1> </span>
+		<span id="header2"> <h2><a href="login.html">Log Out</a></h2> </span>
+	</div>
+
+	<div id="chat">
+		<h3>Select a User to Chat With</h3>
+		<form name="input" action="work.py" method="post">
+			<select name="users">
+				<option selected>Isaac</option>
+				<option>Hubert</option>
+			</select><br>
+			<input type="submit" name="chat" value="submit">
+		</form>
+	</div>
+
+	<div id="already">
+		<h3>You are chatting with:</h3>
+		<p>Isaac</p>
+	</div>
+
+	<div id="notyet">
+		<h3>You are not chatting with:</h3>
+		<p>Hubert</p>
+	</div>
+
+	<div id="block">
+		<h3>Block Users:</h3>
+		Add users to your block list:
+		<form name="input" action="work.py" method="post">
+			<script language="JavaScript">
+			function selectText(textField) 
+			{
+				textField.focus();
+				textField.select();
+			}
+			</script>
+			<input type="text" name="who" value="Usernames separated by commas" onClick='selectText(this); this.onclick=null;' class="long">
+			<input type = "hidden" name = "username" value= USERNAME ><br>
+			<input type ="submit" name = "block" value ="Block"><br>
+		</form><br>
+		
+		<h3>Unblock Users:</h3>
+		Remove users to your block list:
+		<form name="input" action="work.py" method="post">
+			<select name="unblock">
+				<option></option>
+				<option></option>
+			</select>
+			<input type = "hidden" name = "username" value= USERNAME ><br>
+			<input type ="submit" name = "block" value ="Block"><br>
+		</form>
+	</div>
+
+	<div id="bottom">
+		<p>&copy; Isaac Gluck and Hubert Puszklewicz</p>
+		<p> Mr. Jaishankar Period 9</p>
+	</div>
+
+</body>
+</html>

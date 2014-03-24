@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Username </title>
+	<link type="text/css" rel="stylesheet" href="chat.css"/>
+</head>
+<body>
+
+	<div id="header">
+		<span id="header1"> <h1>Username</h1> </span>
+		<span id="header2"> <h2><input type="button" class = "button" value="Chat with another user" onclick="history.back(-1)" /></h2> </span>
+	</div>
+
+	<div id="chat">
+		<h1 align="center">OtherUser</h1><hr><br>
+		Chat<br><hr><br>
+
+	<form name="input" action="work.py" method="post">
+		<textarea name="text" cols="100" rows="20">Enter your message for other here</textarea>
+		<input type="hidden" name = "user" value="username" />
+		<input type="hidden" name = "other" value="other" />
+		<input type="submit" name = "enter" value="message" />
+	</form>
+	</div>
+
+
+	<div id="bottom">
+		<p>&copy; Isaac Gluck and Hubert Puszklewicz</p>
+		<p> Mr. Jaishankar Period 9</p>
+	</div>
+
+</body>
+</html>
